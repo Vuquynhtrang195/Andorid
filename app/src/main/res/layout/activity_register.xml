@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Register"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold" />
@@ -45,6 +45,18 @@
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
             <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_login"
+                android:drawableLeft="@drawable/baseline_attach_email_24"
+                android:drawablePadding="8dp"
+                android:hint="Email Address"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+            <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -57,12 +69,12 @@
                 android:textColor="@color/black"
                 android:textColorHighlight="@color/cardview_dark_background" />
             <Button
-                android:id="@+id/login"
+                android:id="@+id/register"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="25dp"
                 android:backgroundTint="@color/purple"
-                android:text="Login"
+                android:text="Register"
                 android:textSize="20sp" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,18 +84,18 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Don't have an account?"
+                    android:text="Already have an account?"
                     android:textAlignment="center"
                     android:textSize="15sp"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Register"
+                    android:text="Login"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"
-                    android:id="@+id/register"/>
+                    android:id="@+id/login"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
